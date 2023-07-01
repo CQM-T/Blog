@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+  <script>
+    function calculateDays() {
+      var fromDate = new Date("2023-06-30"); // 设置起始日期，示例中的日期是2022年1月1日
+
+      var today = new Date(); // 获取当前日期
+      var timeDiff = today.getTime() - fromDate.getTime();
+
+      var daysDiff = Math.floor(timeDiff / (1000 * 60 * 60 * 24)); // 计算天数差
+
+      document.getElementById("daysPast").innerHTML = "浴火重生已" + daysDiff + "天";
+    }
+  </script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>康文昌的在线HTML 教学小工具</title>
+    <style>  
+      body {
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body onload="calculateDays()">
+  <div style="
+       background-color:#f1f1f1;
+       text-align:center;
+       padding:50px;
+    ">
+    <img style="border-radius: 40%";
+     img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg3.doubanio.com%2Fview%2Fphoto%2Fl%2Fpublic%2Fp2421074710.jpg&refer=http%3A%2F%2Fimg3.doubanio.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1690726702&t=b34547ffc514e49a5efb3a8fa97b87b4" alt="亚历山德拉·伯蒂奇" wigth="200px" height="200px">
+  </div>
+
+  <div style="
+       max-width:700px;
+       margin:50px auto;
+       padding:10px;
+       line-height:1.7;
+       ">
+<p>如果你真的想要做什么，就去做。</p>
+<p>如果你感到恐惧，那便恐惧，但还是要尽力一试。</p>
+<p>如果你追寻完美，那便很可能孤独死去。</p>
+<p>如果你想要改变一些事，那就从自身开始，其他人会追随你的脚步前进。</p>
+<p>如果有糟糕的事情发生了，你可以出去散步，向整座城市呼喊。</p>
+<p>别心存怨恨，你可以靠自己变得更好。</p>
+<p id="daysPast"></p>
+
+  </div>
+ <div style="
+       background-color:#f1f1f1;
+       text-align:center;
+       padding:15px;
+       font-size:10px;
+    ">
+<p>我的涅槃之日2023/06/30 —《瘦身大作战》</p>
+<a href="https://space.bilibili.com/34786453">学习链接</a>
+  </div>
+  </body>
+</html>
